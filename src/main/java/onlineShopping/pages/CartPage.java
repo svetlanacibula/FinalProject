@@ -5,7 +5,6 @@ import com.codeborne.selenide.SelenideElement;
 import static com.codeborne.selenide.Condition.*;
 import static com.codeborne.selenide.Selectors.byValue;
 import static com.codeborne.selenide.Selenide.$;
-import static com.codeborne.selenide.Selenide.$$;
 import static onlineShopping.models.ProductModel.*;
 
 public class CartPage {
@@ -22,11 +21,7 @@ public class CartPage {
         setTempPrice(productPrice.getOwnText());
     }
 
-    public void checkProductPrice() {
-        finalPrice.shouldHave(text(getTempPrice()));
-    }
-
-    public void checkProductFinalName() {
+    public void validateProductFinalName() {
         productFinalName.shouldHave(text(getTempProductName()));
     }
 

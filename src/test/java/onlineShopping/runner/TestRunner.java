@@ -6,9 +6,9 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-    tags = "@FullTest",
-    features = "src/test/resources",
-    glue = "onlineShopping.steps"
+        tags = "@FullTest",
+        features = "src/test/resources",
+        glue = "onlineShopping.steps"
 )
 
 public class TestRunner {

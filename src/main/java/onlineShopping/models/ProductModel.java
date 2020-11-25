@@ -1,7 +1,5 @@
 package onlineShopping.models;
 
-import onlineShopping.common.TempValue;
-
 public class ProductModel {
     private String productType = "Monitori";
     private static String tempPrice;

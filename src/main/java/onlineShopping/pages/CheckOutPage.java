@@ -39,7 +39,7 @@ public class CheckOutPage {
         phoneNumber.setValue(customerPhone);
     }
 
-    public void checkingProductPrice() {
+    public void validateProductPrice() {
         totalPrice.shouldHave(text(getTempPrice()));
     }
 
